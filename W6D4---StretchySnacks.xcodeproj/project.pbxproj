@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A027DB191DF9B63700612FE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027DB181DF9B63700612FE5 /* AppDelegate.swift */; };
 		A027DB1B1DF9B63700612FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027DB1A1DF9B63700612FE5 /* ViewController.swift */; };
-		A027DB1E1DF9B63700612FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A027DB1C1DF9B63700612FE5 /* Main.storyboard */; };
+		A027DB1E1DF9B63700612FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A027DB1C1DF9B63700612FE5 /* Main.storyboard */; settings = {ASSET_TAGS = (1, 2, ); }; };
 		A027DB201DF9B63700612FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A027DB1F1DF9B63700612FE5 /* Assets.xcassets */; };
 		A027DB231DF9B63700612FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A027DB211DF9B63700612FE5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -90,6 +90,10 @@
 		A027DB0D1DF9B63700612FE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+				);
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Dylan-McCrindle";

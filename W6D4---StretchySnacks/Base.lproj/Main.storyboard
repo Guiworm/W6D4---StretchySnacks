@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="W6D4___StretchySnacks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,131 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hul-cG-UN3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCi-uB-Tdq">
+                                        <rect key="frame" x="333" y="17" width="34" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="＋">
+                                            <color key="titleColor" red="0.31742631339999999" green="0.52356977007651018" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMa-AT-j6e"/>
+                                        </connections>
+                                    </button>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zJw-H4-URm">
+                                        <rect key="frame" x="8" y="-16" width="320" height="75"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oreos" translatesAutoresizingMaskIntoConstraints="NO" id="ySk-h7-RKU">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="75"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="4A4-8u-Bqp"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_pockets" translatesAutoresizingMaskIntoConstraints="NO" id="vH9-iX-FYq">
+                                                <rect key="frame" x="65" y="0.0" width="60" height="75"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="E69-ix-aTn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pop_tarts" translatesAutoresizingMaskIntoConstraints="NO" id="TF8-c2-94X">
+                                                <rect key="frame" x="130" y="0.0" width="60" height="75"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="FLg-oR-SmX"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popsicle" translatesAutoresizingMaskIntoConstraints="NO" id="btN-fP-4M9">
+                                                <rect key="frame" x="195" y="0.0" width="60" height="75"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="fIl-Zn-0EB"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ramen" translatesAutoresizingMaskIntoConstraints="NO" id="4hZ-G2-GG3">
+                                                <rect key="frame" x="260" y="0.0" width="60" height="75"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="ezb-F7-mqF"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="1Kj-dO-4aj"/>
+                                            <constraint firstAttribute="height" constant="75" id="3rG-Iv-xdd"/>
+                                            <constraint firstItem="TF8-c2-94X" firstAttribute="centerY" secondItem="ySk-h7-RKU" secondAttribute="centerY" id="DZ8-lv-XBk"/>
+                                            <constraint firstItem="4hZ-G2-GG3" firstAttribute="centerY" secondItem="ySk-h7-RKU" secondAttribute="centerY" id="E2C-cg-baE"/>
+                                            <constraint firstItem="btN-fP-4M9" firstAttribute="centerY" secondItem="ySk-h7-RKU" secondAttribute="centerY" id="Z6k-zQ-wly"/>
+                                            <constraint firstItem="vH9-iX-FYq" firstAttribute="centerY" secondItem="ySk-h7-RKU" secondAttribute="centerY" id="aD7-ZP-Stp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zJw-H4-URm" secondAttribute="bottom" constant="5" id="DMy-xM-cV8"/>
+                                    <constraint firstAttribute="height" constant="64" id="SY8-fm-W9u"/>
+                                    <constraint firstItem="sCi-uB-Tdq" firstAttribute="trailing" secondItem="Hul-cG-UN3" secondAttribute="trailingMargin" id="iG3-dq-Ycu"/>
+                                    <constraint firstItem="zJw-H4-URm" firstAttribute="leading" secondItem="Hul-cG-UN3" secondAttribute="leading" constant="8" id="kL3-7W-ZAI"/>
+                                    <constraint firstItem="sCi-uB-Tdq" firstAttribute="top" secondItem="Hul-cG-UN3" secondAttribute="topMargin" constant="9" id="quC-kE-Lrr"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Mt-Av-YH0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="ECf-XV-iEM">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ECf-XV-iEM" id="6sj-Vg-ske">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Wyz-1B-uG7"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fJ3-St-wsa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hul-cG-UN3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6HA-Q5-FeT"/>
+                            <constraint firstItem="6Mt-Av-YH0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8bz-W7-Z7V"/>
+                            <constraint firstAttribute="trailing" secondItem="Hul-cG-UN3" secondAttribute="trailing" id="H7A-az-NUE"/>
+                            <constraint firstAttribute="trailing" secondItem="6Mt-Av-YH0" secondAttribute="trailing" id="RTt-oh-Ily"/>
+                            <constraint firstItem="6Mt-Av-YH0" firstAttribute="top" secondItem="Hul-cG-UN3" secondAttribute="bottom" id="dQH-iq-VHZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Mt-Av-YH0" secondAttribute="bottom" id="uRv-JQ-f6d"/>
+                            <constraint firstItem="Hul-cG-UN3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yZS-P1-ipB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodStack" destination="zJw-H4-URm" id="RFN-ug-Xoc"/>
+                        <outlet property="navHeight" destination="SY8-fm-W9u" id="Rd5-Rx-vNL"/>
+                        <outlet property="navView" destination="Hul-cG-UN3" id="G7W-Hs-adn"/>
+                        <outlet property="oreosView" destination="ySk-h7-RKU" id="utD-ZD-5tR"/>
+                        <outlet property="pizzaView" destination="vH9-iX-FYq" id="8s6-k6-P5Z"/>
+                        <outlet property="plus" destination="sCi-uB-Tdq" id="fVq-r6-gMv"/>
+                        <outlet property="popsicleView" destination="btN-fP-4M9" id="ixY-gZ-fOY"/>
+                        <outlet property="ramenView" destination="4hZ-G2-GG3" id="0BO-Aa-G9d"/>
+                        <outlet property="tableView" destination="6Mt-Av-YH0" id="yw9-a2-3fX"/>
+                        <outlet property="tartsView" destination="TF8-c2-94X" id="NHE-JQ-dWm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="144.3778110944528"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="oreos" width="473" height="514"/>
+        <image name="pizza_pockets" width="298" height="285"/>
+        <image name="pop_tarts" width="299" height="299"/>
+        <image name="popsicle" width="300" height="300"/>
+        <image name="ramen" width="249" height="252"/>
+    </resources>
 </document>
